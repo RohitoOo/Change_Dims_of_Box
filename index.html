@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<button onClick=grow()>Change Dimensions</button>
+<div id="box">
+
+
+</div>
+
+
+<style>
+
+#box {
+
+  height: 200px;
+  width: 200px;
+  background-color: #8888c;
+  border: 2px solid;
+  background-color: #8888;
+}
+body{
+text-align: center;
+
+}
+</style>
+
+<script type="text/javascript">
+
+
+setInterval ( grow , 2000 );
+
+function grow() {
+
+var grow = document.getElementById("box") ;
+var color = "#" + (Math.floor((Math.random() * 1000) + 1));
+var num = (Math.floor((Math.random() * 1000) + 1)) + "px" ;
+grow.style.height = num;
+grow.style.width = num;
+grow.style.backgroundColor = color;
+};
+
+</script>
+
+</body>
+</html>
